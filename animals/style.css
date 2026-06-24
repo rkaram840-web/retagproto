@@ -1,0 +1,127 @@
+/* إعدادات عامة للموقع */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* شريط التنقل العلوي */
+header {
+    background-color: #ff9800;
+    color: white;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.cart {
+    background-color: white;
+    color: #ff9800;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* القسم الترحيبي (Hero Section) */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffe0b2;
+}
+
+.hero h1 {
+    color: #e65100;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* شبكة عرض المنتجات */
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px 50px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-img {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    color: #e65100;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* أزرار الإضافة إلى السلة */
+.add-to-cart-btn {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #e65100;
+}
+
+/* الفوتر (أسفل الصفحة) */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
